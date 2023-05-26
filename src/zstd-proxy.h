@@ -1,5 +1,8 @@
 #ifndef zstd_proxy_H
 #define zstd_proxy_H
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include <stdlib.h>
 #include <stdbool.h>
@@ -53,5 +56,9 @@ typedef struct {
 
 void zstd_proxy_init(zstd_proxy *proxy);
 int zstd_proxy_run(zstd_proxy *proxy);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
